@@ -50,3 +50,61 @@ const returnIsBreakingLaw=(age,drink)=>{
     }
 }
 returnIsBreakingLaw(18,"coke")
+
+//6. Make a variable called count.Write a function called addToCount that will add the number parameter to the count variable.Call addToCount 4 times with different numbers
+let count=0;
+const addToCount = (num) => {
+  count += num;
+  console.log(count);
+}
+addToCount(4)
+addToCount(12)
+addToCount(43)
+addToCount(90)
+
+//7. Write a function called returnIsChase that will return true if the name parameter is "Chase" - Make case insensitive "Chase" "CHASE" "CHasE" all return true
+const returnIsChase = (name) => {
+    if(name === "Chase" ||name === "CHASE" || name === "CHasE" ){
+        console.log(true);
+        return true;
+    }
+    
+  }
+
+returnIsChase("Chase")
+
+//8. Make a variable called class that is an array ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley"].Write a function called returnClassIsTooSmall that will return true if the students parameter has less than 10 students
+
+let nameList = ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley"];
+
+const returnClassIsTooSmall =(studentName)=>{
+    if(studentName.length < 10){
+        console.log(true);
+    }
+}
+returnClassIsTooSmall(nameList)
+
+//9. Make a variable called combineStrings that will take stringOne parameter and stringTwo parameter and return them combined.call this function 3 times with 6 strings.
+const combineStrings=(stringOne, stringTwo) =>{
+    console.log(stringOne + stringTwo);
+  }
+  combineStrings('HELLO','WORLD')
+  combineStrings('HELLO','SYLVIA')
+  combineStrings('HEL','LO')
+
+  //10.data type
+
+  const returnDataType =(data)=>{
+    console.log(typeof data)
+  }
+  returnDataType(4)
+
+  //11. Write a function called addStudentToClass that will push the student parameter to the class array from problem number 8.Call this function 2 times.
+
+  const addStudentToClass =(nameOfStudent)=>{
+    nameList.push(nameOfStudent)
+     console.log(nameList);
+  }
+
+  addStudentToClass("Peter")
+  addStudentToClass("HAHA")
